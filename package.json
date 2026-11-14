@@ -1,0 +1,45 @@
+{
+  "name": "@sculptr/non-repeating-music",
+  "version": "1.1.2",
+  "displayName": "Non Repeating Music",
+  "description": "Stop the music starting over every time you die: a sculptr mod.",
+  "keywords": [
+    "gamemaker",
+    "mod",
+    "sculptr",
+    "music"
+  ],
+  "homepage": "https://github.com/QuentinJanuel/sculptr-non-repeating-music#readme",
+  "bugs": "https://github.com/QuentinJanuel/sculptr-non-repeating-music/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinJanuel/sculptr-non-repeating-music.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite build --watch\" \"vite preview\"",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "check": "tsc --noEmit && npm test",
+    "prepublishOnly": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@sculptr/detect": "^2.4.0",
+    "@sculptr/sdk": "^2.16.0"
+  }
+}
