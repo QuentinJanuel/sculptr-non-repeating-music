@@ -2,6 +2,7 @@
   "name": "@sculptr/non-repeating-music",
   "version": "1.1.2",
   "displayName": "Non Repeating Music",
+  "icon": "https://cdn.jsdelivr.net/npm/@sculptr/non-repeating-music/icon.svg",
   "description": "Stop the music starting over every time you die: a sculptr mod.",
   "keywords": [
     "gamemaker",
@@ -27,7 +28,8 @@
     "prepublishOnly": "vite build"
   },
   "files": [
-    "dist"
+    "dist",
+    "icon.svg"
   ],
   "publishConfig": {
     "access": "public"
